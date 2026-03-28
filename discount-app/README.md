@@ -1,16 +1,28 @@
-# React + Vite
+# Smart Spend — Financial Optimization Web 💸
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Herramienta de análisis financiero diseñada para optimizar la toma de decisiones de consumo en contextos inflacionarios. Compara de forma dinámica si es más conveniente pagar al contado con descuento o en cuotas (con o sin interés).
 
-Currently, two official plugins are available:
+### 1. El Problema
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+En economías con alta inflación, el valor del dinero en el tiempo cambia drásticamente. Decidir entre un 20% de descuento hoy o 12 cuotas fijas no es trivial sin calcular el costo de oportunidad.
 
-## React Compiler
+### 2. La Solución
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+La app realiza un cálculo de **Valor Presente Neto (VPN)** comparando el desembolso inmediato contra la inversión del capital en un fondo de bajo riesgo (como la TNA de Mercado Pago/Money Market) y ajustando las cuotas por la inflación proyectada.
 
-## Expanding the ESLint configuration
+### 🚀 Tecnologías
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React + Tailwind CSS.
+- **Visualización:** Recharts (Gráficos comparativos de poder adquisitivo).
+- **Data:** Integración con APIs para obtener Inflación Mensual y TNA actualizada.
+- **Deployment:** Vercel.
+
+### 🛠️ Características Principales
+
+- **Cálculo de conveniencia:** Determina el ahorro real exacto al finalizar el período.
+- **Gráficos dinámicos:** Visualización de la erosión del valor de la cuota por inflación.
+- **Proyecciones personalizables:** Permite ajustar la tasa de rendimiento esperada.
+
+---
+
+[Ver App](https://discount-app-two.vercel.app/)
